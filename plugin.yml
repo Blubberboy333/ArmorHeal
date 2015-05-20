@@ -1,0 +1,12 @@
+name: ArmorHeal
+version: 1.0.0
+api: [1.10.0]
+main: ArmorHeal\Main
+permissions:
+  armorheal:
+    default: false
+    description: Allows the player to use all of the functions of ArmorHeal
+    children:
+      armorheal.heal:
+        default: op
+        description: Allows the player to heal when they put on armor
