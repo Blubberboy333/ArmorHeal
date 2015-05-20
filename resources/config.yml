@@ -1,0 +1,4 @@
+## Default config for ArmorHeal
+
+# What armor will heal the player when they put it on? (Use the id)
+Armor: 299
