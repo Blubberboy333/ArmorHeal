@@ -23,9 +23,9 @@ class Main extends PluginBase implements Listener{
     $entity = $event->getEntity();
     if($entity instanceof Player){
       if($entity->hasPermission("armorheal.heal")){
-        $armor = $event->getNewItem();
+        $armor = $event->getNewItem()->getId();
         $heal = $this->getConfig()->get("Armor");
-        if($armor = $heal){
+        if($armor == $heal){
           $entity->setHealth(20);
         }else{
         }
