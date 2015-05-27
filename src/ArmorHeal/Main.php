@@ -27,11 +27,9 @@ class Main extends PluginBase implements Listener{
         $heal = $this->getConfig()->get("Armor");
         if($armor == $heal){
           $entity->setHealth(20);
-        }else{
+          $entity->sendMessage("[ArmorHeal] You have been healed!");
         }
-      }else{
       }
-    }else{
     }
   }
 }
